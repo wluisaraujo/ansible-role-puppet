@@ -1,0 +1,12 @@
+---
+# tasks file for puppet-ce
+- name: Instalando repositorio PuppeLabs
+  yum:
+    name: http://yum.puppetlabs.com/puppet5/puppet-release-el-7.noarch.rpm
+    state: present
+
+- name: Instalar Puppet e PuppetLint
+  yum: name={{ item }} state=latest
+  with_items: 
+    - puppet-agent
+...

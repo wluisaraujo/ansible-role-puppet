@@ -1,0 +1,19 @@
+##
+[master]
+server		= {{ server }}
+
+[main]
+server 		= {{ server }}
+environment	= production
+
+[agent]
+server		= {{ server }}
+report		= true
+certname	= {{ ansible_nodename }}
+server		= {{ server }}
+listen        	= true
+splay         	= true
+splaylimit    	= 1800
+runinterval   	= 3600
+noop          	= false
+

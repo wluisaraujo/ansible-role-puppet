@@ -1,2 +1,3 @@
 ---
 # vars file for puppet-ce
+server: puppet.dexter.com.br
