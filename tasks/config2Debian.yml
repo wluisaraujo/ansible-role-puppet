@@ -1,19 +1,19 @@
 ---
 # tasks file for puppet-ce
-- name: Instalando repositorio PuppeLabs
+- name: "Instalando repositorio PuppeLabs"
   get_url: 
     url: https://apt.puppetlabs.com/puppet5-release-{{ ansible_distribution_release }}.deb
     dest: /tmp/puppet5-release-{{ ansible_distribution_release }}.deb
   when: ( ansible_os_family == "Debian" )
   register: repo
   
-- name: Instalando pacote .DEB
+- name: "Instalando pacote .DEB"
   apt: 
     deb: /tmp/puppet5-release-{{ ansible_distribution_release }}.deb
   when: ( repo is success )
   register: result
   
-- name: Instalar Puppet e PuppetLint
+- name: "Instalar Puppet e PuppetLint"
   apt: 
     name: "{{ item }}"
     update_cache: yes 
@@ -23,5 +23,5 @@
     - puppet-lint
   when:
     - ansible_os_family == "Debian"
-    - "result is success"
+    - result is success
 ...
