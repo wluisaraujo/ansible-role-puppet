@@ -2,7 +2,7 @@
 # tasks file for puppet-ce
 - name: "Instalando repositorio PuppeLabs"
   get_url: 
-    url: https://apt.puppetlabs.com/puppet5-release-{{ ansible_distribution_release }}.deb
+    url: http://apt.puppetlabs.com/puppet5-release-{{ ansible_distribution_release }}.deb
     dest: /tmp/puppet5-release-{{ ansible_distribution_release }}.deb
     force: yes
     validate_certs: no
