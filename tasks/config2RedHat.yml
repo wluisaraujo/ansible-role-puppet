@@ -9,4 +9,5 @@
   yum: name={{ item }} state=latest
   with_items: 
     - puppet-agent
+  when: (ansible_os_family == "RedHat")  
 ...
