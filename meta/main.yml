@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: iac-ansible-puppet-ce
   author: w.luis.araujo
   description: "Install Puppet CE"
   company: LUSAR | wluisaraujo.github.io
