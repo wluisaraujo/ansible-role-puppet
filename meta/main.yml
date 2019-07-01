@@ -1,9 +1,9 @@
 galaxy_info:
-  role_name: iac-ansible-puppet-ce
+  role_name: puppet
   author: w.luis.araujo
-  description: "Install Puppet CE"
+  description: "Infrastructure as Code (IaC) with Ansible role for Install Puppet CE"
   company: LUSAR | wluisaraujo.github.io
-  license: "(GPLv3)"
+  license: "license (GPLv3)"
   min_ansible_version: 2.0
   platforms:
   - name: EL
