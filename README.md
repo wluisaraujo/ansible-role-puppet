@@ -1,5 +1,5 @@
-[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Puppet-blue.svg)](https://galaxy.ansible.com/wluisaraujo/iac-ansible-puppet-ce)  [![Build Status](https://travis-ci.org/wluisaraujo/iac-ansible-puppet-ce.svg?branch=master)](https://travis-ci.org/wluisaraujo/iac-ansible-puppet-ce)
----
+[![Ansible Galaxy](https://img.shields.io/badge/Ansible%20Galaxy-Puppet-blue.svg)](https://galaxy.ansible.com/wluisaraujo/puppet) [![Build Status](https://travis-ci.org/wluisaraujo/ansible-role-puppet.svg?branch=master)](https://travis-ci.org/wluisaraujo/ansible-role-puppet)
+
 # IaC: with [Ansible](https://www.ansible.com) role to install and configure [Puppet](https://puppet.com/)
 ------------
 
@@ -31,8 +31,8 @@ Example Playbook
   vars:
     - name: value
   roles:
-    - iac-ansible-puppet-ce
-...    
+    - puppet
+...
 ```
 
 ----------------
