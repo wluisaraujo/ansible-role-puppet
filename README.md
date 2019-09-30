@@ -13,6 +13,14 @@ Requirements
 
  *
 
+Installation
+------------
+
+```console
+vagrant@localhost:~$ ansible-galaxy install wluisaraujo.puppet
+vagrant@localhost:~$ ansible-galaxy install -r wluisaraujo.puppet/requirements.txt
+```
+
 Role Variables
 --------------
 
